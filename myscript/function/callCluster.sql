@@ -12,10 +12,10 @@ class KMeansClusterer:
     def __init__(self):
         self.stopList=stopwords.words('english')
     def loadBestWords(self):
-        self.bestwords=pickle.load(open("/Users/dongqingxiao/pythonEx/basicLearning/birdModel/bestWord.p","rb"))
+        self.bestwords=pickle.load(open("/Users/dongqingxiao/Documents/ResearchProject2014/pgsqlProject/myscript/function/clustering/bestWord.p","rb"))
 
     def loadModel(self):
-        self.clusterer=pickle.load(open("/Users/dongqingxiao/pythonEx/basicLearning/kmeanClusterModel.p","rb"))
+        self.clusterer=pickle.load(open("/Users/dongqingxiao/Documents/ResearchProject2014/pgsqlProject/myscript/function/clustering/kmeanClusterModel.p","rb"))
 
     def featureExtraction(self,d,bestwords):
 
@@ -48,10 +48,10 @@ class EMClusterer:
         self.stopList=stopwords.words('english')
 
     def loadBestWords(self):
-        self.bestwords=pickle.load(open("/Users/dongqingxiao/pythonEx/basicLearning/birdModel/bestWord.p","rb"))
+        self.bestwords=pickle.load(open("/Users/dongqingxiao/Documents/ResearchProject2014/pgsqlProject/myscript/function/clustering/bestWord.p","rb"))
 
     def loadModel(self):
-        self.clusterer=pickle.load(open("/Users/dongqingxiao/pythonEx/basicLearning/EMClustererModel.p","rb"))
+        self.clusterer=pickle.load(open("/Users/dongqingxiao/Documents/ResearchProject2014/pgsqlProject/myscript/function/clustering/EMClustererModel.p","rb"))
 
     def featureExtraction(self,d,bestwords):
 
